@@ -878,7 +878,7 @@ export class pf1Provider extends SystemProvider {
 		actors = actors.map((actor) => {
 			return {
 				...actor,
-				languages: languages.map((language) => actor.languages?.includes(language)),
+				languages: languages.map((language) => actor.languages?.has(language)),
 			};
 		});
 
